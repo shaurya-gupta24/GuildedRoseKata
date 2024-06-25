@@ -7,7 +7,7 @@ namespace GildedRoseTests;
 public class GildedRoseTest
 {
     [Test]
-    public void NormalItem_ValueDecreases()
+    public void UpdateQuality_NormalItem_ValueDecreases()
     {
         var NormalItem = new Item { Name = "normalItem", SellIn = 10, Quality = 10 };
         GildedRose.Items = new List<Item> {  NormalItem };
@@ -18,7 +18,7 @@ public class GildedRoseTest
     }
 
     [Test]
-    public void NormalItem_ValueDecreases_ValueDoesNotGoNegative()
+    public void UpdateQuality_NormalItem_ValueDecreases_ValueDoesNotGoNegative()
     {
         var NormalItem = new Item { Name = "normalItem", SellIn = 10, Quality = 10 };
         GildedRose.Items = new List<Item> { NormalItem };
@@ -34,7 +34,7 @@ public class GildedRoseTest
     }
 
     [Test]
-    public void NormalItem_ValueDecreases_ValueDecreasesAtDouble()
+    public void UpdateQuality_NormalItem_ValueDecreases_ValueDecreasesAtDouble()
     {
         var NormalItem = new Item { Name = "normalItem", SellIn = 0, Quality = 10 };
         GildedRose.Items = new List<Item> { NormalItem };
