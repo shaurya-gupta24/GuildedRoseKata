@@ -256,7 +256,7 @@ public class GildedRoseTest
     [Test]
     public void UpdateQuality_Conjured_ExpiryBelowZero_DecreasesByFour()
     {
-        var testItem = new Item { Name = "conjured mana cake", SellIn = 0, Quality = 20 };
+        var testItem = new Item { Name = "Conjured mana cake", SellIn = 0, Quality = 20 };
         GildedRose.Items = new List<Item>
             {
                 testItem
@@ -277,7 +277,7 @@ public class GildedRoseTest
     [Test]
     public void UpdateQuality_Conjured_DecreasesByTwo()
     {
-        var testItem = new Item { Name = "conjured mana cake", SellIn = 20, Quality = 20 };
+        var testItem = new Item { Name = "Conjured mana cake", SellIn = 20, Quality = 20 };
         GildedRose.Items = new List<Item>
             {
                 testItem

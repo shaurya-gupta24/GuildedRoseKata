@@ -14,6 +14,8 @@
 
                 case string a when a.Contains("Backstage pass"): return new BackstagePass(item);
 
+                case string a when a.Contains("Conjured"): return new Conjured(item);
+
                 default: return new NormalItem(item);
 
             };
