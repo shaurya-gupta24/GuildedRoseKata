@@ -10,13 +10,13 @@ namespace GildedRoseKata
 
             switch (name)
             {
-                case string a when a.Contains("Sulfuras"): return new Sulfuras(item);
+                case string Sulfuras when Sulfuras.Contains("Sulfuras"): return new Sulfuras(item);
 
-                case string a when a.Contains("Aged Brie"): return new AgedBrie(item);
+                case string Brie when Brie.Contains("Aged Brie"): return new AgedBrie(item);
 
-                case string a when a.Contains("Backstage pass"): return new BackstagePass(item);
+                case string Backstage when Backstage.Contains("Backstage pass"): return new BackstagePass(item);
 
-                case string a when a.Contains("Conjured"): return new Conjured(item);
+                case string Conjured when Conjured.Contains("Conjured"): return new Conjured(item);
 
                 default: return new NormalItem(item);
 
