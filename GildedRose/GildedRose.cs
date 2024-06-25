@@ -11,7 +11,17 @@ public class GildedRose
         GildedRose.Items = Items;
     }
 
+
     public static void UpdateQuality()
+    {
+        foreach(var item in GildedRose.Items)
+        {
+            var customItem = CustomItemFactory.CreateCustomItem(item);
+            customItem.UpdateQuality();
+        }
+    }
+
+    public static void UpdateQualityA()
     {
         for (var i = 0; i < Items.Count; i++)
         {
