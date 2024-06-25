@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GildedRoseKata
+namespace GildedRoseKata.Items
 {
     public class BackstagePass : CustomItem
     {
@@ -15,18 +15,18 @@ namespace GildedRoseKata
             var increase = 0;
 
             // after 'SellIn' date quality becomes 0.
-            if ( IsExpired() )
+            if (IsExpired())
             {
                 item.Quality = MinQuality;
                 return;
             }
             // when 'SellIn' date is less than 5 quality increases by 3.
-            else if( item.SellIn < 5 )
+            else if (item.SellIn < 5)
             {
                 increase = 3;
             }
             // when 'SellIn' date is less than 10 but greater than 5, quality increases by 2.
-            else if( item.SellIn < 10)
+            else if (item.SellIn < 10)
             {
                 increase = 2;
             }

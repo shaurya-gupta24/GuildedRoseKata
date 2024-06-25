@@ -1,4 +1,6 @@
-﻿namespace GildedRoseKata
+﻿using GildedRoseKata.Items;
+
+namespace GildedRoseKata
 {
     internal static class CustomItemFactory
     {

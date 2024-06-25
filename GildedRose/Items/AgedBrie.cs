@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GildedRoseKata
+namespace GildedRoseKata.Items
 {
     public class AgedBrie : CustomItem
     {
