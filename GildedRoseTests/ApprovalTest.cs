@@ -23,6 +23,6 @@ public class ApprovalTest
         Program.Main(new string[] { "30" });
         var output = fakeOutput.ToString();
 
-        return Verifier.Verify(output);
+        return Verifier.Verify(output, sourceFile: @$".\ApprovalTest.ThirtyDays.verified.txt");
     }
 }

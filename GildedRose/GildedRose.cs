@@ -4,14 +4,14 @@ namespace GildedRoseKata;
 
 public class GildedRose
 {
-    IList<Item> Items;
+    public static IList<Item> Items;
 
     public GildedRose(IList<Item> Items)
     {
-        this.Items = Items;
+        GildedRose.Items = Items;
     }
 
-    public void UpdateQuality()
+    public static void UpdateQuality()
     {
         for (var i = 0; i < Items.Count; i++)
         {
