@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-
-namespace GildedRoseKata
+﻿namespace GildedRoseKata
 {
     internal static class CustomItemFactory
     {
@@ -16,6 +9,10 @@ namespace GildedRoseKata
             switch (name)
             {
                 case string a when a.Contains("Sulfuras"): return new Sulfuras(item);
+
+                case string a when a.Contains("Aged Brie"): return new AgedBrie(item);
+
+                case string a when a.Contains("Backstage pass"): return new BackstagePass(item);
 
                 default: return new NormalItem(item);
 
